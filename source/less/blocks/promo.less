@@ -65,12 +65,20 @@
     position: relative;
     min-height: 694px;
     top: -119px;
-    background: url("../img/index-background-cat-desktop.png") no-repeat;
+    background-image: image-set(
+      url("../img/index-background-cat-desktop.webp"),
+      url("../img/index-background-cat-desktop.png")
+    );
+    background-repeat: no-repeat;
     background-size: cover;
     min-width: 1093px;
 
     @media (min-resolution: @retina) {
-      background: url("../img/index-background-cat-desktop@2x.png") no-repeat;
+      background-image: image-set(
+      url("../img/index-background-cat-desktop@2x.webp"),
+      url("../img/index-background-cat-desktop@2x.png")
+    );
+      background-repeat: no-repeat;
       background-size: cover;
     }
   }
